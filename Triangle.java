@@ -4,7 +4,7 @@ public class Triangle {
 	private double x;
 	private double y;
 	private double z;
-	//private double sum;
+	
 	public Triangle(double x, double y, double z) {
 		super();
 		this.x = x;
