@@ -35,10 +35,13 @@ public class Triangle {
 	public void setZ(double z) {
 		this.z = z;
 	}
-	public double sum (double x, double y, double z) {
-
-		double sum = x + y + z;
-		System.out.println(sum);
-		return sum;
+	public double area () {
+		double halfPerimeter = (x + y + z)/2;
+		double area = Math.sqrt(halfPerimeter*(halfPerimeter - x)*(halfPerimeter - y)*(halfPerimeter - z));
+		return area;
 	}
+	public void print() {
+		System.out.println(area());
+	}
+	
 }
